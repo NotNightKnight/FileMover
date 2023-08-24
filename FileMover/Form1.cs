@@ -24,7 +24,7 @@ namespace FileMover
         {
             if(!File.Exists(txtPath))
             {
-                File.Create(txtPath);
+                File.Create(txtPath).Close();
             }
             else
             {
